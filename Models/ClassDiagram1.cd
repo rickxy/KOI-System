@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="KOI_System.Models.Organizer">
+    <Position X="2.5" Y="1.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAEAAAAAAAAAIAAAAAAAAAgAAAAAABAAAAAAAAAA=</HashCode>
+      <FileName>Models\Organizer.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Property Name="Seminars" />
+      <Property Name="Events" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="KOI_System.Models.seminars">
+    <Position X="0.75" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAIAgAEAAAAAAAAAAAAAAABABAAAAAAAAAAA=</HashCode>
+      <FileName>Models\Seminar.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="KOI_System.Models.Events">
+    <Position X="4.75" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAIAFAEAAAAAAAAAAAAAAABABAAAAAAAAAAA=</HashCode>
+      <FileName>Models\Events.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Property Name="EventOrganizer" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="KOI_System.Models.User">
+    <Position X="4.75" Y="1" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAEAAAAAAAAAIAAAAAAAAAAAAAAAABAAAAAAAAAA=</HashCode>
+      <FileName>Models\User.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

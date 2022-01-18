@@ -1,0 +1,168 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - King's Own Institute</title>
+
+    <link rel = "stylesheet" type = "text/css" href = "~/css/bootstrap-theme.css" />
+    <link rel = "stylesheet" type = "text/css" href = "~/css/bootstrap-theme.css.map">
+    <link rel = "stylesheet" type = "text/css" href = "~/css/bootstrap.css">
+    <link rel = "stylesheet" type = "text/css" href = "~/css/bootstrap.css.map">
+    <link rel = "stylesheet" type = "text/css" href = "~/css/style.css">
+
+    <link rel = "stylesheet" type = "text/css" href = "~/css/style.css">
+      <link rel = "stylesheet" type = "text/css" href = "~/css/style.css">
+        <link rel = "stylesheet" type = "text/css" href = "~/css/style.css">
+    
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'><!--css links. file found in utils folder-->
+        
+    <script src="~/js/jquery-1.12.1.min.js"></script>
+    <script src="~/js/bootstrap.min.js"></script>
+    <script src="~/js/js.js"></script>
+
+</head>
+<body>
+   
+
+
+         <header class="bgImage">
+    <nav class="navbar">
+        <div class="container">
+            <div class="navbar-header"><!--website name/title-->
+                <a href = "index.php" class = "navbar-brand">
+                    King's Own Institute
+                </a>             </div>
+            <ul class="nav navbar-nav navbar-right"><!--navigation-->
+
+
+                   
+                <li>
+                    <a  asp-area="" asp-controller="Home" asp-action="Default" >Home</a>
+                </li>
+                <li>
+                    <a  asp-area="" asp-controller="Home" asp-action="Event" >Events</a>
+                </li>
+                <li>
+                    <a  asp-area="" asp-controller="Home" asp-action="Location" >Locations</a>
+                </li>
+                <li>
+                    <a  asp-area="" asp-controller="Home" asp-action="Contact" >Contact Us</a>
+                </li>
+                    <li>
+                    <a  asp-area="" asp-controller="Seminar" asp-action="Record" >Add Seminar</a>
+                </li>
+
+                <button type = "button" class = "btn btn-default navbar-btn" data-toggle = "modal" data-target = "#loginnn">Info <Span class="glyphicon glyphicon-log-in"></span></button>    
+                    
+                <div class="modal fade" id="login" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"><!--modal for login-->
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header"><!--modal header-->
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                <h4 class="modal-title" id="myModalLabel">Login</h4><!--modal title-->
+                            </div>
+                            <div class="row">
+                                <div class="modal-body"><!--modal content-->
+                                    <div class ="col-md-6 col-md-offset-3">
+                                        <form action="login.php" method="POST">
+                                            <div class = "form-group"><!--username-->
+                                                <label for="username">Username:</label>
+                                                <input type="text"
+                                                       name="username"
+                                                       class="form-control"
+                                                       value=""
+                                                       />
+                                                <span class="error"><!--error message on failed input-->
+                                                                                                    </span>
+                                            </div>
+                                            <div class="form-group"><!--password-->
+                                                <label for="password">Password:</label>
+                                                <input type="password"
+                                                       name="password"
+                                                       class="form-control"
+                                                       value=""
+                                                       />
+                                                <span class="error"><!--error message on failed input-->
+                                                                                                    </span>
+                                            </div>
+                                            <button type="submit" class = "btn btn-default loginbtn">Login</button><!--login button-->
+                                            <a class="btn btn-default navbar-btn rgsterbtn" href = "register_form.php">Register</a><!--register button-->
+                                        </form>
+                                    </div>
+                                </div><!--modal body div-->
+                            </div><!--row div-->
+                            <div class="modal-footer"><!--modal footer-->
+                            <button type="button" class="btn btn-default closebtn" data-dismiss="modal">Close</button><p><!--close button-->
+                            </div><!--modal footer div-->
+                        </div><!--modal content div-->
+                    </div><!--modal dialog div-->
+                </div><!--modal div-->
+            </ul>
+        </div><!--container div-->
+    </nav>
+    <div class = "col-md-12">
+        <div class = "container">
+            <div class = "jumbotron"><!--jumbotron-->
+                <h1>KOI Seminars Management System </h1><!--jumbotron heading-->
+                <p><!--jumbotron content-->
+                Whether you're looking to book a cocktail party, post-work gathering, celebratory function, conference, business
+                meeting, wedding or private dining event, our dedicated Urban Events team can create a package that will meet
+                your every need.
+                </p>
+                <p id="dateAndTime"></p>
+            </div>
+        </div>
+    </div>
+</header><!--header content. file found in utils folder-->
+
+
+    <div class="container">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+
+       <hr class = "footerline"><!--css modified horizontal line-->
+<footer>
+    <div class = "container">
+        <div class = "row">
+            <section>
+                <div class = "footerContent col-md-4"><!--left content-->
+                    <p class = "footerContent1">
+                        <strong>K</strong><span class = "small footerSubtext">ing's</span>
+                        <strong>O</strong><span class = "small footerSubtext">wn</span>
+                        <strong>I</strong><span class = "small footerSubtext">nstitute</span>
+                       
+                    </p>
+
+                    <p class = "footerSubtext2">
+                        Kill Avenue, Dun Laoghaire, Co. Dublin
+                        &copy; 2022.
+                    </p>
+                </div>
+            </section>
+            <section>
+                <div class = "footcontent col-md-4"><!--middle content-->
+                    DL824 Multimedia Design/Web Engineering<br>
+                    Creative Computing 2021-2022.<br>
+                    Julz Engracio, N00145647
+                </div>
+            </section>
+            <section>
+                <div class = "footcontent col-md-4"><!--right content-->
+                    Follow Us:<br>
+                        <img src = "~/images/facebook.png">
+                        <img src = "~/images/twitter.png">
+                        <img src = "~/images/googleplus.png">
+                        <img src = "~/images/youtube.png">
+                </div>
+            </section>
+        </div>
+    </div>
+</footer><!--footer content. file found in utils folder-->
+   
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>
