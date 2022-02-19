@@ -269,3 +269,4 @@ C:\xampp\htdocs\KOI System\bin\Debug\net6.0\zh-Hant\Microsoft.CodeAnalysis.Works
 C:\xampp\htdocs\KOI System\bin\Debug\net6.0\runtimes\win-arm\lib\net6.0\dotnet-aspnet-codegenerator-design.exe
 C:\xampp\htdocs\KOI System\bin\Debug\net6.0\runtimes\win-arm64\lib\net6.0\dotnet-aspnet-codegenerator-design.exe
 C:\xampp\htdocs\KOI System\obj\Debug\net6.0\scopedcss\Views\Shared\_Layouts.cshtml.rz.scp.css
+C:\xampp\htdocs\KOI System\obj\Debug\net6.0\KOI System.csproj.AssemblyReference.cache
